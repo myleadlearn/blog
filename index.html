@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog | Lead Learn</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Professional Blog | Lead Learn</h1>
+    <p>Explore insightful knowledge across a wide range of topics.</p>
+  </header>
+
+  <!-- Cookie Warning -->
+  <div class="warning" id="cookie-warning">
+    ⚠️ Please enable cookies to use the like feature.
+  </div>
+
+  <div class="container">
+    <!-- Blog Post 1 -->
+    <section class="blog-card" id="post-alphabet">
+      <h2>How Many Letters Are There in the English Alphabet?</h2>
+      <p>The English alphabet consists of 26 letters, from A to Z.</p>
+      <div class="like-section">
+        <button class="like-button" onclick="likePost('like1')">👍 Like</button>
+        <span class="like-count" id="like1" data-count="0">0</span>
+      </div>
+    </section>
+
+    <!-- Blog Post 2 -->
+    <section class="blog-card" id="post-leapyear">
+      <h2>What Is a Leap Year?</h2>
+      <p>A leap year has 366 days, including February 29. It happens every 4 years.</p>
+      <div class="like-section">
+        <button class="like-button" onclick="likePost('like2')">👍 Like</button>
+        <span class="like-count" id="like2" data-count="0">0</span>
+      </div>
+    </section>
+
+    <!-- Blog Post 3 -->
+    <section class="blog-card" id="post-sky">
+      <h2>Why Is the Sky Blue?</h2>
+      <p>The blue color of the sky is due to Rayleigh scattering, where blue light is scattered more than other colors.
+      </p>
+      <div class="like-section">
+        <button class="like-button" onclick="likePost('like3')">👍 Like</button>
+        <span class="like-count" id="like3" data-count="0">0</span>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Lead Learn | All Rights Reserved.</p>
+    <div class="social-links">
+      <span title="GitHub" onclick="window.open('https://github.com/myleadlearn', '_blank')">GitHub</span>
+      <span title="YouTube" onclick="window.open('https://youtube.com/@myleadlearn', '_blank')">YouTube</span>
+    </div>
+  </footer>
+
+  <script src="static/js/script.js"></script>
+
+</body>
+
+</html>

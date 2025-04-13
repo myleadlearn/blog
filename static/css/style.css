@@ -1,0 +1,141 @@
+:root {
+  --primary-color: #3498db; /* Professional Blue */
+  --accent-color: #1abc9c; /* Teal for highlights */
+  --highlight-color: #f39c12; /* Amber for buttons */
+  --background-dark: #2c3e50; /* Dark background for body */
+  --text-color-dark: #ecf0f1; /* Light gray text */
+  --card-bg-dark: #34495e; /* Dark card background */
+  --button-bg-dark: #16a085; /* Teal button background */
+  --footer-bg-dark: #1a252f; /* Dark footer */
+  --warning-bg: #e74c3c; /* Warning color */
+  --border-radius: 10px;
+  --transition-speed: 0.3s;
+}
+
+/* Body */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: var(--text-color-dark);
+  background-color: var(--background-dark);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+/* Blog Cards */
+.blog-card {
+  background-color: var(--card-bg-dark);
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding: 2rem;
+  transition: all var(--transition-speed) ease;
+  border-left: 5px solid var(--highlight-color);
+}
+
+.blog-card h2 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.blog-card p {
+  font-size: 1.1rem;
+  color: var(--text-color-dark);
+  margin-bottom: 1.5rem;
+}
+
+/* Like Button */
+.like-button {
+  background-color: var(--button-bg-dark);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+}
+
+.like-button:hover {
+  background-color: var(--highlight-color);
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2.5rem;
+  background-color: var(--footer-bg-dark);
+  color: white;
+  border-top: 5px solid var(--highlight-color);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+footer .social-links span {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform var(--transition-speed);
+}
+
+footer .social-links span:hover {
+  transform: scale(1.2);
+  color: var(--highlight-color);
+}
+
+/* Cookie Warning */
+.warning {
+  background-color: var(--warning-bg);
+  color: white;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  border-radius: var(--border-radius);
+  display: none;
+  text-align: center;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .blog-card {
+    padding: 1.5rem;
+  }
+
+  .like-button {
+    padding: 0.5rem 1.2rem;
+  }
+
+  footer {
+    padding: 1.5rem;
+  }
+}
